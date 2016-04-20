@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Erh-1p-Myb">
+                        <rect key="frame" x="0.0" y="44" width="320" height="105.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-Ak-EGY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ih-Kt-EYb">
+                                <rect key="frame" x="15" y="11" width="149" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="FNq-DN-99n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="QeW-2E-hYi">
+                                <rect key="frame" x="283" y="12" width="22" height="20"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-2r-ioK">
+                                <rect key="frame" x="128" y="3" width="114" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.035294117649999998" green="0.066666666669999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="DEj-8q-itU"/>
+                            <constraint firstItem="9ih-Kt-EYb" firstAttribute="leading" secondItem="Qjo-Ak-EGY" secondAttribute="leading" constant="15" id="HVL-Es-ArL"/>
+                            <constraint firstAttribute="bottom" secondItem="9ih-Kt-EYb" secondAttribute="bottom" constant="11" id="JfX-Rv-kQK"/>
+                            <constraint firstItem="9ih-Kt-EYb" firstAttribute="top" secondItem="Qjo-Ak-EGY" secondAttribute="top" constant="11" id="Q3T-1K-f2f"/>
+                            <constraint firstAttribute="bottom" secondItem="QeW-2E-hYi" secondAttribute="bottom" constant="12" id="Tmo-Fu-tHs"/>
+                            <constraint firstItem="QeW-2E-hYi" firstAttribute="top" secondItem="Qjo-Ak-EGY" secondAttribute="top" constant="12" id="elu-fI-pZB"/>
+                            <constraint firstAttribute="trailing" secondItem="QeW-2E-hYi" secondAttribute="trailing" constant="15" id="ngW-un-fmQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Erh-1p-Myb" secondAttribute="trailing" id="6zj-gD-iGH"/>
+                    <constraint firstAttribute="bottom" secondItem="Erh-1p-Myb" secondAttribute="bottom" id="99v-Ig-PxH"/>
+                    <constraint firstItem="Erh-1p-Myb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B6F-q1-6rh"/>
+                    <constraint firstItem="Qjo-Ak-EGY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RuL-1h-Aew"/>
+                    <constraint firstItem="Qjo-Ak-EGY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VqA-vQ-eT3"/>
+                    <constraint firstItem="Erh-1p-Myb" firstAttribute="top" secondItem="Qjo-Ak-EGY" secondAttribute="bottom" id="d2J-Uf-rZL"/>
+                    <constraint firstAttribute="trailing" secondItem="Qjo-Ak-EGY" secondAttribute="trailing" id="fHx-dH-sip"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImageView" destination="QeW-2E-hYi" id="4JQ-xr-1xm"/>
+                <outlet property="lable" destination="9ih-Kt-EYb" id="leZ-48-87M"/>
+                <outlet property="tableView" destination="Erh-1p-Myb" id="0wb-Sd-XyW"/>
+            </connections>
+            <point key="canvasLocation" x="311" y="272"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.png" width="22" height="22"/>
+    </resources>
+</document>
